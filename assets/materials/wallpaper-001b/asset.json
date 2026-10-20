@@ -1,0 +1,25 @@
+{
+  "id": "wallpaper001b",
+  "name": "Wallpaper 001 B",
+  "source": "ambientCG",
+  "url": "https://ambientcg.com/a/Wallpaper001B",
+  "license": "CC0-1.0",
+  "sourceResolution": {
+    "Color": [
+      2048,
+      2048
+    ],
+    "Roughness": [
+      2048,
+      2048
+    ],
+    "NormalGL": [
+      2048,
+      2048
+    ]
+  },
+  "previewResolution": 1024,
+  "tileSizeMetres": 1,
+  "normalStrength": 0.3,
+  "note": "Includes Color, Roughness and OpenGL normal maps. Default scale is one metre; adjust to your project."
+}

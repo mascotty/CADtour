@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "items": [
+    {
+      "type": "user_0123456789abcdef0123456789abcdef",
+      "folder": "user-0123456789abcdef0123456789abcdef",
+      "name": "示例边桌（MIT）",
+      "category": "示例",
+      "width": 0.8,
+      "height": 0.75,
+      "depth": 0.6
+    }
+  ]
+}

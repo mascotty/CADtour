@@ -1,0 +1,10 @@
+* text=auto
+*.cmd text eol=crlf
+*.py text eol=lf
+*.js text eol=lf
+*.mjs text eol=lf
+*.blend binary
+*.glb binary
+*.jpg binary
+*.png binary
+*.dxf text eol=crlf
