@@ -1,6 +1,0 @@
-{
-  "private": true,
-  "type": "module",
-  "scripts": {"test": "node test_release.mjs"},
-  "devDependencies": {"playwright": "1.64.0"}
-}

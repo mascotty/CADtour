@@ -23,6 +23,9 @@ along with plans when moving computers. The bundled catalog is `catalog.json`;
 new imports go into ignored `catalog.local.json`. Browser saves are origin-specific.
 
 See the Chinese README for detailed features and use, `THIRD_PARTY_NOTICES.md` for
-licenses, and [development and release guide](docs/DEVELOPMENT.md) for validation. Run Python unit tests as documented.
+licenses. This user edition omits tests, development notes and release tools.
+Bundled example assets are ready to use; no Node.js or test dependencies are required.
 GitHub Pages cannot run the Python/Blender backend. This is a loopback-only application,
 not a public multi-user service.
+
+Known source-package issue: some postprocessing modules for Quick preview image output are missing in the original package. They were not removed by this cleanup. Use Blender Cycles for rendering.

@@ -72,16 +72,15 @@ python launch.py
 - 内置示例清单在 `assets/models/catalog.json`；新增模型登记在被 Git 忽略的 `catalog.local.json`，不会修改公开示例清单。
 - `.renders/` 是渲染历史；`.asset-imports/` 是导入任务目录。确认不再需要、任务已停止后可自行清理，先备份需要的 PNG／BLEND。
 
-## 开发与发布
+## 已知原包问题
 
-```powershell
-python -m unittest test_render_server.py test_asset_import.py test_wall_text_outlines.py
-```
+原发布包未包含“快速预览”输出图片所需的部分后处理模块，因此该输出路径可能报错。
+本次精简没有删除这些模块（原包已缺失）；可选择 Blender Cycles 渲染。三维编辑预览是另一条路径。
 
-这些测试可在当前包内运行。字体测试需要 Windows；完整渲染验证见 [开发、发布与验证](docs/DEVELOPMENT.md)。源码不需要 Node 构建；维护用浏览器检查脚本依赖 `tools/package.json` 中的 Playwright。
+## 使用者精简版
 
-发布前运行 `python tools/package_release.py --check`，正式分享可运行 `python tools/package_release.py`，得到排除运行记录和新增私人素材的 ZIP。脚本依据随包发布清单打包，不会把后来导入的素材自动上传。
+此包保留启动、平面编辑、三维预览、模型导入、Cycles 渲染、示例素材和许可文件。
+测试脚本、开发验证记录、素材生成脚本和发布打包工具未包含。无需安装 Node 或测试依赖。
+已提供的示例模型和示例图纸可直接使用，不需要重新生成。
 
-本项目仅监听 `127.0.0.1`，不应直接改为公网开放。GitHub 仓库可分发源代码；GitHub Pages 不能提供 Python、模型转换或 Cycles 渲染。云端多人服务需要另行实现认证、任务隔离、存储及资源管理。
-
-更多信息：[渲染说明](RENDERING.md) · [素材与依赖许可](THIRD_PARTY_NOTICES.md) · [开发与发布](docs/DEVELOPMENT.md) · [英文简介](README.en.md)。
+更多信息：[渲染说明](RENDERING.md) · [素材与依赖许可](THIRD_PARTY_NOTICES.md) · [英文简介](README.en.md)。
