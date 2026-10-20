@@ -23,6 +23,6 @@ along with plans when moving computers. The bundled catalog is `catalog.json`;
 new imports go into ignored `catalog.local.json`. Browser saves are origin-specific.
 
 See the Chinese README for detailed features and use, `THIRD_PARTY_NOTICES.md` for
-licenses, and `RELEASE_CHECKS.md` for validation. Run Python unit tests as documented.
+licenses, and [development and release guide](docs/DEVELOPMENT.md) for validation. Run Python unit tests as documented.
 GitHub Pages cannot run the Python/Blender backend. This is a loopback-only application,
 not a public multi-user service.

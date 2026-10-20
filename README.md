@@ -78,10 +78,10 @@ python launch.py
 python -m unittest test_render_server.py test_asset_import.py test_wall_text_outlines.py
 ```
 
-这些测试可在当前包内运行。字体测试需要 Windows；完整渲染验证见 `RELEASE_CHECKS.md`。源码不需要 Node 构建；维护用浏览器检查脚本依赖 `tools/package.json` 中的 Playwright。
+这些测试可在当前包内运行。字体测试需要 Windows；完整渲染验证见 [开发、发布与验证](docs/DEVELOPMENT.md)。源码不需要 Node 构建；维护用浏览器检查脚本依赖 `tools/package.json` 中的 Playwright。
 
 发布前运行 `python tools/package_release.py --check`，正式分享可运行 `python tools/package_release.py`，得到排除运行记录和新增私人素材的 ZIP。脚本依据随包发布清单打包，不会把后来导入的素材自动上传。
 
 本项目仅监听 `127.0.0.1`，不应直接改为公网开放。GitHub 仓库可分发源代码；GitHub Pages 不能提供 Python、模型转换或 Cycles 渲染。云端多人服务需要另行实现认证、任务隔离、存储及资源管理。
 
-更多信息：[渲染说明](RENDERING.md) · [素材与依赖许可](THIRD_PARTY_NOTICES.md) · [分享与发布](PUBLISHING.md) · [贡献说明](CONTRIBUTING.md) · [英文简介](README.en.md)。
+更多信息：[渲染说明](RENDERING.md) · [素材与依赖许可](THIRD_PARTY_NOTICES.md) · [开发与发布](docs/DEVELOPMENT.md) · [英文简介](README.en.md)。
